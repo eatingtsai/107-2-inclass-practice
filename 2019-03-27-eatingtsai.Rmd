@@ -67,4 +67,44 @@ print(twDateTime)
 twDateTime + 1
 ```
 
+```{r}
+startingDate <- ymd("2000-02-17")
+startingDate + years(1)
+startingDate + dyears(1)
+```
+
+```{r}
+x <- 5
+y <- 7
+
+7*x == 5*y
+
+x2 <- c(1,5,10)
+y2 <- c(-1,5,20)
+```
+
+```{r}
+x4 <- c(1,5,8)
+y4 <- c(5,8)
+
+x4 %in% y4
+
+
+x5 <- c("台北市","新北市","高雄市")
+y5 <- c("台北市","新北市")
+
+x5 %in% y5
+```
+
+
+```{r}
+x2 <- c(1,NA,10)
+y2 <- c(-1,NA,20)
+
+x3 <- c(NA,"小花")
+y3 <- c(NA,"小華")
+
+x2 > y2
+is.na(x2)
+```
 
