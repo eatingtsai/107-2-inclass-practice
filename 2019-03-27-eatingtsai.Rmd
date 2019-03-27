@@ -40,3 +40,31 @@ testDatetime3 <- mdy("March 3, 2019", tz="Asia/Taipei")
 ```
 
 ```{r}
+a <- c(1, 5, -3)
+b <- c(0.5, 12, 2)
+
+aL <- c(1L, 5L, -3L)
+bL <- c(-2L, -4L, 8L)
+
+print(a/b)
+
+print(a/bL)
+
+class(a + bL)
+
+class(a+b)
+
+class(aL + bL)
+
+class(aL)
+
+a^b
+a %% b
+```
+
+```{r}
+print(twDateTime)
+twDateTime + 1
+```
+
+
