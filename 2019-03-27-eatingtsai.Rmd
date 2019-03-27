@@ -6,6 +6,36 @@ output: html_document
 ---
 
 ```{r}
+library(lubridate)
+dtObject<-ymd_hms("1970-01-01 00:02:53") 
+```
+```{r}
+Sys.timezone()
+```
 
+
+```{r}
+twDateTime <- ymd_hms("2019-03-18 14:04:00", tz="Asia/Taipei")
+
+LisbonDateTime <- with_tz(twDateTime,tzone="Europe/Lisbon")
+
+AustraliaDateTime <- with_tz(twDateTime,tzone="Australia/LHI")
+```
+
+```{r}
+typeof(twDateTime)
+as.double(twDateTime)
+as.double(LisbonDateTime)
+```
+
+```{r}
+testDateTime <- mdy_h("3/14/2019 8", tz="Asia/Taipei")
+typeof(testDateTime)
+as.double(testDateTime)
+```
+
+```{r}
+tesDatetime2 <- ymd("2018-09-11", tz="Asia/Taipei")
+testDatetime3 <- mdy("March 3, 2019", tz="Asia/Taipei")
 ```
 
