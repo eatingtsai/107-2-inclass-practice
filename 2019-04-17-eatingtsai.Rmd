@@ -1,0 +1,29 @@
+---
+title: '2019-04-17'
+author: "eatingtsai"
+date: "4/17/2019"
+output: html_document
+---
+```{r}
+plasticContainer <- list(
+  greenBox=c("paper","scissor"),     # location 1
+  redBox=c(1,3,2.5),               # location 2
+  blueBox=c(TRUE,FALSE,TRUE,TRUE)    # location 3
+)
+```
+
+```{r}
+plasticContainer[["greenBox"]] 
+plasticContainer[[1]]
+```
+
+```{r}
+x <- plasticContainer[["greenBox"]] 
+x[[1]]
+
+plasticContainer[["greenBox"]][[1]]
+```
+
+```
+
+
