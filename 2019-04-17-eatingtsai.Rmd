@@ -94,7 +94,7 @@ plasticContainer[["greenBox"]]
 ```
 
 ```{r}
-your_github_username <- "tpemartin"
+your_github_username <- "eatingtsai"
 your_practice_reponame <- "107-2-inclass-practice"
 library(httr)
 library(stringr)
