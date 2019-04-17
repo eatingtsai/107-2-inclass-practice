@@ -108,3 +108,7 @@ str_replace_all(
 commitCheck <- content(GET(commitCheckStatement))
 ```
 
+```{r}
+commitCheck[[4]][["commit"]][["tree"]][["sha"]]
+```
+
