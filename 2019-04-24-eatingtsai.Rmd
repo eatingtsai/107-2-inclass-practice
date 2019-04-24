@@ -10,8 +10,9 @@ MAT2 <- matrix(c("a","b","c","d"),2,2)
 MAT2
 class(MAT2)
 typeof(MAT2)
-MAT2[[2]]
+MAT2[[2]]0.
 MAT2[c(T,F,F,T)]]
+MAT2[2,]
 ```
 
 ```{r}
@@ -21,5 +22,24 @@ StuDF <- data.frame(StuID=c(1,2,3,4,5), ##欄位名稱=欄位值
 StuDF
 
 StuDF[[2]][[3]]
+```
+
+```{r}
+rownames(StuDF)
+str(StuDF) 
+as.character(StuDF) -> StuDF2
+StuDF2
+```
+
+```{r}
+chosenLETTERS <- LETTERS[1:15]
+matOBJ1 <-  matrix(chosenLETTERS,5,3)
+matOBJ1
+tolower(matOBJ1)
+toupper(matOBJ1)
+```
+```{r}
+matOBJ1[c(1,3),c(2,3)]
+matOBJ1[c(T,F,T,F,F),c(F,T,T)]
 ```
 
