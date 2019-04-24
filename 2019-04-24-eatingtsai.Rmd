@@ -1,0 +1,25 @@
+---
+title: '2019-04-24'
+author: "eatingtsai"
+date: "4/24/2019"
+output: html_document
+---
+
+```{r}
+MAT2 <- matrix(c("a","b","c","d"),2,2)
+MAT2
+class(MAT2)
+typeof(MAT2)
+MAT2[[2]]
+MAT2[c(T,F,F,T)]]
+```
+
+```{r}
+StuDF <- data.frame(StuID=c(1,2,3,4,5), ##欄位名稱=欄位值
+                  name=c("小明","大雄","胖虎","小新","大白"),
+                  score=c(80,60,90,70,50))
+StuDF
+
+StuDF[[2]][[3]]
+```
+
