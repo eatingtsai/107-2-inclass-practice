@@ -34,7 +34,7 @@ invoiceList
 
 ```{r}
 library(lubridate)
-ymd_hms("1973-02-21 12:05:22", tz = "America/New_York") ->a
+ymd_hms("1973-02-21 12:05:22", tz = "America/New_York") -> a
 withtz(a, tzone = "Asia/Taipei") -> b
 b
 ```
