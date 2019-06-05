@@ -25,6 +25,10 @@ gmailAddress <- c(
 ```
 
 ```{r}
+for(i in gmailAddress){
+  print(i)
+}
+print("-")
 for (i in c(1:4)){
   print(gmailAddress[[i]])
 }
@@ -32,8 +36,6 @@ print("-")
 for (i in seq_along(gmailAddress)){
   print(gmailAddress[[i]])
 }
-print("-")
-
 ```
 
 ```{r}
